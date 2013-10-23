@@ -1,0 +1,50 @@
+title
+title = query("com.bauermedia.tvmovie.app.view.BroadcastCellView index:2", :titleText)
+title
+touch(query("com.bauermedia.tvmovie.app.view.BroadcastCellView index:2"))
+touch(query("com.android.internal.view.menu.ActionMenuItemView contentDescription:'Auf den Merkzettel setzen'"))
+exit()
+exit()
+start_test_server_in_background
+query("imageView")
+touch(query("imageView" index:1))
+touch(query("imageView index:0"))
+query("textView")
+query("textView text:'Merkzettel'")
+touch(query("textView text:'Merkzettel'"))
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView")
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView", titleText)
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView", :titleText)
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView index:0", :titleText)
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView", :titleText)
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView")
+[]=query("com.bauermedia.tvmovie.app.view.BroadcastCellView")
+[]==query("com.bauermedia.tvmovie.app.view.BroadcastCellView")
+exit()
+exit()
+start_test_server_in_background
+start_test_server_in_background
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView").count
+exit()
+start_test_server_in_background
+touch(query("imageView index:0"))
+touch(query("textView text:'Merkzettel'"))
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView")
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView")!=[]
+exit()
+start_test_server_in_background
+touch(query("imageView index:0"))
+touch(query("textView text:'Merkzettel'"))
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView")!=[]
+touch(query("imageView index:0"))
+touch(query("textView text:'Listenansicht'"))
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView index:2", :titleText)
+touch(query("com.bauermedia.tvmovie.app.view.BroadcastCellView index:2"))
+touch(query("com.android.internal.view.menu.ActionMenuItemView contentDescription:'Auf den Merkzettel setzen'"))
+touch(query("imageView index:0"))
+touch(query("imageView index:0"))
+touch(query("textView text:'Merkzettel'"))
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView").count!=1
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView")[0]
+query("com.bauermedia.tvmovie.app.view.BroadcastCellView index:0", :titleText)
+exit()
